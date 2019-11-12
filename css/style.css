@@ -429,10 +429,10 @@ background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, F
 
 @media screen and (max-width: 900px) {
   .timeline ul li div {
-    width:100px;
+    width:50px;
   }
   .timeline ul li:nth-child(even) div {
-    left: -289px;
+    left: -150px;
     /*250+45-6*/
   }
   .expImg{
