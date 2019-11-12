@@ -468,13 +468,13 @@ width:100%;
     margin-left: 20px;
   }
   .timeline ul li div {
-    width:calc(100vw - 0px);
+    width:100%;
   }
   .timeline ul li:nth-child(even) div {
     left: 45px;
   }
   .timeline ul li:nth-child(even) div::before {
-    left: -10px;
+    left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent #66a36b transparent transparent;
 
