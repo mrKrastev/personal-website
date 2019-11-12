@@ -1,0 +1,477 @@
+
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+h1{
+  color:white;
+}
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
+}
+body{
+  margin: 0;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: top;
+
+ background-color: #166d3b;
+ background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
+}
+
+#contentbox{
+  margin-top:10px;
+  padding-left: 10px;
+    border-spacing: 10px;
+    margin-left:15px;
+    margin-right:10px;
+  background: inherit;
+  border-radius: 2px;
+  overflow: hidden;
+  text-align:center;
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+  z-index: -1;
+
+}
+
+
+
+/*education and timeline css*/
+
+
+.timeline ul {
+  background-color: #166d3b;
+  background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background-color: #166d3b;
+  background-image: linear-gradient(147deg, #3CA55C 0%, #B5AC49 74%);
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+
+  border-color: transparent #66a36b transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #66a36b;
+
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: green;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/*exploring the world tab css*/
+.flexibleBox{
+  background-color: #166d3b;
+  background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
+  display:flex;
+  flex-wrap:wrap;
+
+}
+
+.expImg>img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  border-style: groove;
+}
+
+.expImg{
+  padding:5px;
+  width:30%;
+  height:30%;
+}
+
+
+
+
+/*Sport css*/
+.container2{
+  display:flex;
+  flex-wrap:wrap;
+  background-color: #166d3b;
+  background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
+  padding:0px;
+  margin:0px;
+  justify-content: center;
+
+}
+.container2 h1{
+  width:100%;
+  padding:10px;
+  margin:5px;
+}
+.container2 p{
+  width:100%;
+  color:white;
+}
+.divforimg>img{
+width:33%;
+
+margin:5px;
+border: 1px solid #ddd;
+  border-radius: 4px;
+}
+/*music tab css*/
+.guitarbox{
+  -moz-box-shadow: 10px 10px 16px #000000;
+-webkit-box-shadow: 10px 10px 16px #000000;
+box-shadow: 10px 10px 16px #000000;
+  display:flex;
+  flex-wrap:wrap;
+  width:45%;
+border-radius:10px;
+padding:2px;
+margin:5px;
+margin-top:15px;
+text-align: center;
+border:2px;
+background: #8E0E00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.guitarbox>img{
+  width:50%;
+  margin:10%;
+  margin-left:25%;
+  margin-bottom:10px;
+  border-radius:50px;
+  border-style: ridge;
+
+}
+
+.guitarbox>p{
+  text-align: justify;
+  text-justify: inter-word;
+  color:white;
+  font-family:Lucida Grande;
+  margin:5px;
+  margin-botom:0px;
+
+}
+.guitarbox>h1{
+  width:100%;
+  height:10px;
+  margin:2px;
+  padding:2px;
+
+}
+#prayerinC{
+  width:100%;
+  margin:10px;
+  padding:10px;
+
+}
+
+iframe{
+  width:100%;
+  height:100%;
+}
+
+.musictastebox{
+  -moz-box-shadow: 10px 10px 16px #000000;
+-webkit-box-shadow: 10px 10px 16px #000000;
+box-shadow: 10px 10px 16px #000000;
+  display:flex;
+  flex-wrap:wrap;
+  width:45%;
+border-radius:10px;
+padding:2px;
+margin:5px;
+margin-top:15px;
+text-align: center;
+border:2px;
+background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.musictastebox>p{
+  text-align: justify;
+  text-justify: inter-word;
+  color:white;
+  font-family:Lucida Grande;
+  margin:20px;
+
+}
+.musictastebox>h1{
+  width:100%;
+  height:10px;
+  margin:2px;
+  padding:2px;
+
+}
+
+/*gaming tab css*/
+
+
+
+  .no-border {
+    border-right: none;
+  }
+
+          p{
+          color: #424242;
+          font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+   letter-spacing:0.1em;
+   text-align:center;
+   font-variant: small-caps;
+          }
+
+
+/*welcome screen card css*/
+.card {
+  display:inline-block;
+  width:40%;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+  border-radius: 18px;
+  background-color: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+}
+.card-image {
+  grid-area: image;
+}
+.card-text {
+  grid-area: text;
+
+}
+.card-stats {
+  grid-area: stats;
+}
+.card-image {
+  grid-area: image;
+  background: url("/media/cardImg.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+.card-text .date {
+  color: rgb(255, 7, 110);
+  font-size:13px;
+}
+.card-text p {
+  color: grey;
+  font-size:15px;
+  font-weight: 300;
+}
+.card-text h2 {
+  margin-top:0px;
+  font-size:28px;
+}
+.card-stats {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: rgb(255, 7, 110);
+}
+.card-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding:10px;
+}
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card {
+...
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+  .expImg{
+width:100%;
+  }
+  .guitarbox{
+    width:100%;
+
+  }
+  .musictastebox{
+    width:100%;
+
+  }
+
+
+  .card {
+    width:80%;
+    height:50%;
+    display: inline-block;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #66a36b transparent transparent;
+
+  }
+
+
+}
