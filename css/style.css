@@ -467,9 +467,7 @@ width:100%;
   .timeline ul li {
     margin-left: 20px;
   }
-  .timeline ul li div {
-    width:80%;
-  }
+  
   .timeline ul li:nth-child(even) div {
     left: 45px;
   }
