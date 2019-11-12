@@ -429,7 +429,7 @@ background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, F
 
 @media screen and (max-width: 900px) {
   .timeline ul li div {
-    width:250px;
+    width:70%;
   }
   .timeline ul li:nth-child(even) div {
     left: -289px;
@@ -468,7 +468,7 @@ width:100%;
     margin-left: 20px;
   }
   .timeline ul li div {
-    width: 100px;
+    width:70%;
   }
   .timeline ul li:nth-child(even) div {
     left: 45px;
