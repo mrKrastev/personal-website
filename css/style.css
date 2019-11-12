@@ -442,7 +442,7 @@ width:100%;
     width:100%;
 
   }
-  .guitarbox img {
+  .guitarbox>img {
     height:300px;
   }
   .musictastebox{
