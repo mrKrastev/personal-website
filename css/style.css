@@ -474,7 +474,7 @@ width:100%;
     left: 45px;
   }
   .timeline ul li:nth-child(even) div::before {
-    left: -15px;
+    left: -10px;
     border-width: 8px 16px 8px 0;
     border-color: transparent #66a36b transparent transparent;
 
